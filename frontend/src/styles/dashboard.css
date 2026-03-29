@@ -1,0 +1,304 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.dashboard {
+  padding: 20px;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2c3e50;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.header h2 {
+  margin: 0;
+}
+
+/* Buttons */
+
+.admin-btn {
+  margin-right: 10px;
+  padding: 8px 15px;
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.admin-btn:hover {
+  background: #2980b9;
+}
+
+.logout-btn {
+  padding: 8px 15px;
+  background: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: #c0392b;
+}
+
+.upload-btn {
+  margin-left: 10px;
+  padding: 8px 15px;
+  background: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-btn:hover {
+  background: #1e8449;
+}
+
+/* Upload Section */
+
+.upload-section {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* User Layout */
+
+.user-layout {
+  display: flex;
+  gap: 20px;
+}
+
+/* Files Section */
+
+.files-section {
+  width: 35%;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.files-section h3 {
+  margin-top: 0;
+}
+
+.file-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.file-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.file-name-link {
+  cursor: pointer;
+  color: #2c3e50;
+  font-size: 14px;
+  word-break: break-all;
+}
+
+.file-name-link:hover {
+  color: #3498db;
+}
+
+.file-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.file-actions button {
+  padding: 4px 10px;
+  font-size: 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #3498db;
+  color: white;
+}
+
+.file-actions button:hover {
+  background: #2980b9;
+}
+
+.file-actions .delete-btn {
+  background: #e74c3c;
+}
+
+.file-actions .delete-btn:hover {
+  background: #c0392b;
+}
+
+/* Content Section */
+
+.content-section {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.content-section h3 {
+  margin-top: 0;
+}
+
+.file-content {
+  margin-top: 10px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  min-height: 200px;
+  font-size: 13px;
+}
+
+/* Recent Section */
+
+.recent-section {
+  background: white;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+}
+
+.recent-section h3 {
+  margin-top: 0;
+}
+
+.recent-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recent-section li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.recent-section li:hover {
+  color: #3498db;
+}
+
+/* Admin Cards */
+
+.admin-cards {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.admin-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.admin-card h3 {
+  margin-top: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.admin-card p {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 0;
+  color: #2c3e50;
+}
+
+/* Logs Container */
+
+.logs-container {
+  background: white;
+  margin-top: 30px;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.logs-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+/* Logs Table */
+
+.logs-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.logs-table th {
+  background: #2c3e50;
+  color: white;
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.logs-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid #eee;
+}
+
+.logs-table tr:hover td {
+  background: #f8f9fa;
+}
+
+/* Status Badges */
+
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status.upload {
+  background: #27ae60;
+}
+
+.status.view {
+  background: #3498db;
+}
+
+.status.download {
+  background: #f39c12;
+}
+
+.status.delete {
+  background: #e74c3c;
+}

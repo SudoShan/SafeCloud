@@ -1,0 +1,12 @@
+.upload-box {
+  padding: 15px;
+}
+
+.upload-btn {
+  margin-top: 10px;
+  background: #27ae60;
+}
+
+.upload-btn:hover {
+  background: #219150;
+}
