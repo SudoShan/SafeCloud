@@ -30,6 +30,10 @@ app.get("/", (req, res) => {
     res.send("Secure Cloud Storage API Running");
 });
 
+//log
+const logRoutes = require("./routes/logRoutes");
+app.use("/api", logRoutes);
+
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {

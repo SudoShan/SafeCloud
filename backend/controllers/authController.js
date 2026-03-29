@@ -12,7 +12,7 @@ const generateToken = (id) => {
 // Register
 const registerUser = async (req, res) => {
     try {
-        const { username, password, publicKey, encryptedPrivateKey } = req.body;
+        const { username, password, publicKey, encryptedPrivateKey, role } = req.body;
 
         const userExists = await User.findOne({ username });
         if (userExists) {
@@ -26,7 +26,8 @@ const registerUser = async (req, res) => {
             username,
             passwordHash,
             publicKey,
-            encryptedPrivateKey
+            encryptedPrivateKey,
+            role: role || "user"
         });
 
         res.status(201).json({
@@ -60,7 +61,8 @@ const loginUser = async (req, res) => {
             userId: user._id,
             username: user.username,
             publicKey: user.publicKey,
-            encryptedPrivateKey: user.encryptedPrivateKey
+            encryptedPrivateKey: user.encryptedPrivateKey,
+            role: user.role
         });
 
     } catch (error) {
