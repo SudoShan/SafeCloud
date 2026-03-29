@@ -12,9 +12,19 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
+// auth
 const authRoutes = require("./routes/authRoutes");
 
 app.use("/api/auth", authRoutes);
+
+//key
+const keyRoutes = require("./routes/keyRoutes");
+
+app.use("/api", keyRoutes);
+
+//file
+const fileRoutes = require("./routes/fileRoutes");
+app.use("/api/files", fileRoutes);
 
 app.get("/", (req, res) => {
     res.send("Secure Cloud Storage API Running");
